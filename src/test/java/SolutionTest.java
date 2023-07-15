@@ -30,4 +30,35 @@ public class SolutionTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void maxEventsTest3(){
+        int[][] events = {
+                {1,2},
+                {1,2},
+                {3,3},
+                {1,5},
+                {1,5}
+        };
+        int expected = 5;
+        int actual = new Solution().maxEvents(events);
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void maxEventsTest4(){
+        int[][] events = {
+                {1,5},
+                {1,5},
+                {1,5},
+                {2,3},
+                {2,3}
+        };
+        int expected = 5;
+        int actual = new Solution().maxEvents(events);
+
+        Assertions.assertEquals(expected, actual);
+    }
+
 }
